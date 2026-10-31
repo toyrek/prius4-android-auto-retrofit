@@ -11,7 +11,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, CondPageBreak, Table, TableStyle, Preformatted, KeepTogether
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, CondPageBreak, Table, TableStyle, Preformatted, KeepTogether, Image
 
 ROOT = Path(__file__).resolve().parents[1]
 URL = 'https://github.com/toyrek/prius4-android-auto-retrofit/'
@@ -61,6 +61,18 @@ def content(source):
     while i<len(lines):
         line=lines[i]
         if not line.strip(): i+=1; continue
+        picture=re.fullmatch(r'!\[([^]]*)\]\(([^)]+)\)',line.strip())
+        if picture:
+            alt,target=picture.groups()
+            path=(source.parent/target).resolve()
+            if path.suffix=='.svg': path=path.with_suffix('.png')
+            if not path.is_relative_to(ROOT) or not path.exists():
+                raise ValueError(f'Missing local illustration: {target}')
+            img=Image(str(path))
+            ratio=174*mm/img.imageWidth
+            img.drawWidth=174*mm; img.drawHeight=img.imageHeight*ratio
+            out.extend([img,Spacer(1,9)])
+            i+=1; continue
         if line.startswith('```'):
             code=[]; i+=1
             while i<len(lines) and not lines[i].startswith('```'):
@@ -93,18 +105,20 @@ def content(source):
 def footer(canvas,doc):
     canvas.setStrokeColor(colors.HexColor('#d4dde4')); canvas.line(18*mm,17*mm,192*mm,17*mm)
     canvas.setFont('Guide',7); canvas.setFillColor(navy)
-    canvas.drawString(18*mm,12*mm,'toyrek / Prius IV Android Auto - v1.0.0 - 31 octobre 2026')
+    canvas.drawString(18*mm,12*mm,'toyrek / Prius IV Android Auto - v1.1.0 - 31 octobre 2026')
     canvas.drawRightString(192*mm,12*mm,str(doc.page))
 
-story=[Spacer(1,35*mm),Paragraph('PRIUS IV',ParagraphStyle('cover',parent=styles['h1'],fontSize=34,leading=40)),
+story=[Spacer(1,15*mm),Paragraph('PRIUS IV',ParagraphStyle('cover',parent=styles['h1'],fontSize=34,leading=40)),
  Paragraph('Android Auto avec le poste Toyota d’origine',styles['h1']),Spacer(1,10*mm),
  Paragraph('Tutoriel communautaire et retour d’expérience',styles['h2']),
  Paragraph('Panasonic 86140-47490 / MEU 86840-06041 / JBL',styles['body']),
  Paragraph('Audio 1046 préalable, puis clés 1 > 2 > 1 > 3 > 2',styles['h2']),
  Spacer(1,10*mm),Paragraph('<b>Un cas réussi, pas une compatibilité universelle.</b> Le propriétaire a confirmé Android Auto filaire le 30 octobre 2026. L’adaptation Prius reste non officielle ; une interruption ou des fichiers inadaptés peuvent rendre le poste inutilisable.',styles['body']),
  Paragraph('Lire la compatibilité et toutes les étapes avant de brancher une clé. Les clés 1 et 3 peuvent démarrer automatiquement.',styles['body']),
- Spacer(1,10*mm),Paragraph(f'<link href="{URL}" color="#087e83">github.com/toyrek/prius4-android-auto-retrofit</link>',styles['body']),
- Paragraph('Version 1.0.0 - 31 octobre 2026. Documents originaux CC BY 4.0. Projet indépendant de Toyota. Les liens du PDF sont cliquables.',styles['body'])]
+ Spacer(1,6*mm),Image(str(ROOT/'assets/parcours.png'),width=174*mm,height=174*mm*355/1200),Spacer(1,8*mm),
+ Paragraph('<link href="https://toyrek.github.io/prius4-android-auto-retrofit/" color="#087e83">Ouvrir le formulaire et le guide interactif</link>',styles['body']),
+ Paragraph(f'<link href="{URL}" color="#087e83">github.com/toyrek/prius4-android-auto-retrofit</link>',styles['body']),
+ Paragraph('Version 1.1.0 - 31 octobre 2026. Documents originaux CC BY 4.0. Projet indépendant de Toyota. Les liens du PDF sont cliquables.',styles['body'])]
 for index,file in enumerate(sorted((ROOT/'docs').glob('*.md'))):
     story.append(PageBreak() if index == 0 or file.name.startswith('04-') else CondPageBreak(70*mm))
     if index > 0 and not file.name.startswith('04-'): story.append(Spacer(1,10*mm))

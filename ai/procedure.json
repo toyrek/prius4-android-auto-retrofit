@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "kind": "human_observation_guide",
+  "automatic_actions": false,
+  "flash_authorized": false,
+  "source": "docs/04-installation.md",
+  "scope": {
+    "vehicle": "Prius IV européenne MY2019",
+    "head_unit": "Panasonic CV-CS38E2AJ",
+    "dcu_part": "86140-47490",
+    "meu_part": "86840-06041",
+    "equipment": ["JBL", "DAB", "navigation Toyota", "CD"],
+    "start": {"dcu_id": "17TDT2EU-DA01", "meu_id": "17TMT2EU-FA00", "audio": 1000, "navigation": 1512, "navdb": "943"},
+    "evidence": "Résultat Android Auto déclaré par le propriétaire ; pas une procédure universelle ni une approbation Toyota."
+  },
+  "rules": [
+    "Avant tout changement de support : connaître l'étape et le message exact.",
+    "Pendant une écriture : garder l'alimentation et la clé ; les fins d'étapes ci-dessous sont des conditions, pas des commandes automatiques.",
+    "Ne jamais avancer au seul chronomètre. Les délais de stabilisation explicitement prévus interviennent après une fin confirmée.",
+    "Si message, cible ou référence diffère, examiner cet écart ; ne pas répéter des clés ni redémarrer à l'aveugle.",
+    "Une conversion déjà commencée demande une reconstitution, pas un départ automatique à IDENTIFY.",
+    "Cette fiche ne supprime pas la divergence documentaire v4/v10 sur les cartes 943."
+  ],
+  "states": [
+    {"id":"IDENTIFY","source_section":"docs/01-compatibilite.md","required_observation":"État actuel, marché, fabricant, matériel, équipement et versions relevés ; les inconnues restent visibles.","next_action":"Comparer le matériel et l'historique avec le cas documenté, sans clé branchée.","next":"PRECHECK"},
+    {"id":"PRECHECK","source_section":"docs/03-preparer-les-cles.md","required_observation":"Correspondance examinée, incertitudes discutées, supports sauvegardés et FAT32, extractions et empreintes contrôlées, profil complet ; véhicule dehors, P, frein serré, READY et temps disponible.","next_action":"Lire toute la procédure applicable. Pour le départ Audio 1000/DA01 suivi ici, examiner la proposition de la clé Audio préalable. Ne pas appliquer 1046 par défaut à une version plus récente.","next":"AUDIO_PROPOSAL"},
+    {"id":"AUDIO_PROPOSAL","source_section":"docs/04-installation.md","required_observation":"DA01 confirmé et la mise à jour préalable propose Audio 1046 dans notre cas.","next_action":"Après décision explicite de lancer cette mise à jour, attendre sa fin ; conserver READY et le support pendant l'écriture.","next":"AUDIO_FINISHED"},
+    {"id":"AUDIO_FINISHED","required_observation":"Fin d'installation et demande de redémarrage du préalable.","next_action":"Suivre l'écran pour le redémarrage ; conserver la clé sauf instruction explicite contraire. Attendre une minute avant de revenir en READY.","next":"AUDIO_VERIFIED"},
+    {"id":"AUDIO_VERIFIED","required_observation":"Redémarrage terminé et Audio 1046 affiché.","next_action":"Retirer le support préalable. Le cas documenté poursuit depuis HOME avec la clé 1 ; son action peut démarrer automatiquement.","next":"A_SUCCESS"},
+    {"id":"A_SUCCESS","required_observation":"Clé 1 première passe : RESULT: SUCCESS! et fin de cette phase.","next_action":"Garder la clé 1, couper POWER puis redémarrer en READY selon cette étape du bulletin.","next":"A_DONE"},
+    {"id":"A_DONE","required_observation":"STATUS: DONE! ; consigne de retirer le support et lancer la mise à jour KWI.","next_action":"Retirer la clé 1, insérer la clé 2 et examiner la proposition Navigation dans Mise à jour du logiciel.","next":"B_PROPOSAL"},
+    {"id":"B_PROPOSAL","required_observation":"La proposition Navigation correspond au paquet et à la cible 1120 du cas suivi.","next_action":"Après confirmation de la mise à jour, conserver READY et la clé 2 durant l'écriture.","next":"B_RESTART"},
+    {"id":"B_RESTART","required_observation":"Fin de cette phase et message NEW SOFTWARE IS READY FOR UPDATE demandant un redémarrage.","next_action":"Couper puis redémarrer en READY avec la clé 2 branchée.","next":"B_VERIFIED"},
+    {"id":"B_VERIFIED","required_observation":"MEU 17TMT2EU-FA10 et Navigation 1120 affichés après redémarrage.","next_action":"Depuis HOME, retirer la clé 2 et remettre la clé 1 pour la réplication.","next":"C_FINISHED"},
+    {"id":"C_FINISHED","required_observation":"REPLICATE SYSTEM ... FINISHED, traitement terminé selon le texte complet à l'écran.","next_action":"Retirer la clé 1, couper POWER, puis redémarrer en READY. Le parcours poursuit avec la clé 3 Europe adaptée au matériel identifié.","next":"D_INSTALLING"},
+    {"id":"D_INSTALLING","required_observation":"Clé 3 : Preparing new software ou Installing new software.","next_action":"Attendre, garder READY et la clé 3 en place. Des redémarrages automatiques sont possibles.","next":"D_COMPLETED"},
+    {"id":"D_COMPLETED","required_observation":"Installation terminée ; l'écran demande de retirer le périphérique USB puis d'arrêter le moteur/contact.","next_action":"Dans cet ordre : retirer la clé 3, couper POWER, puis redémarrer en READY.","next":"D_VERIFIED"},
+    {"id":"D_VERIFIED","required_observation":"DCU 17TDT2EU-DA31 affiché ; Audio 1023 était l'état intermédiaire de notre séance.","next_action":"Examiner la mise à jour finale avec la clé 2. La cible Audio du paquet documenté est 1075 ; ne pas rétrograder un état final plus récent par analogie.","next":"E_PROPOSAL"},
+    {"id":"E_PROPOSAL","required_observation":"La mise à jour sur le DA31 correspond à la finalisation Audio 1075 documentée.","next_action":"Après lancement, conserver READY et la clé 2 jusqu'à la demande de redémarrage à la fin.","next":"E_RESTART"},
+    {"id":"E_RESTART","required_observation":"Mise à jour finale terminée et demande de redémarrage affichée.","next_action":"Garder la clé 2, couper POWER, attendre une minute puis revenir en READY. Après l'accueil, attendre encore deux minutes sans manipuler l'écran, puis retirer la clé.","next":"E_VERIFIED"},
+    {"id":"E_VERIFIED","required_observation":"DA31, FA10, Audio 1075 et Navigation 1120 relevés après stabilisation.","next_action":"Effectuer les contrôles de docs/05-apres-installation.md ; distinguer chaque fonction confirmée, en échec ou non testée.","next":"COMPLETE"},
+    {"id":"COMPLETE","source_section":"docs/05-apres-installation.md","required_observation":"Résultats consignés, dont lancement réel d'Android Auto ; ne pas confondre icône visible et fonctionnement complet.","next_action":"Conserver le journal, les références et les contrôles ; partager uniquement un retour expurgé si le propriétaire le demande.","next":null}
+  ]
+}

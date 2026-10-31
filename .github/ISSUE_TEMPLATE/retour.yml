@@ -16,7 +16,7 @@ body:
     id: hardware
     attributes:
       label: Références et équipement
-      description: DCU, MEU, Panasonic/Denso, JBL, navigation, DAB, CD. Aucun identifiant unique.
+      description: DCU, MEU, fabricant, écran, JBL, navigation, DAB, CD. Poste d'origine ou remplacé ? Aucun identifiant unique.
     validations:
       required: true
   - type: textarea
@@ -30,7 +30,7 @@ body:
     id: process
     attributes:
       label: Paquets, profil, étapes et messages
-      description: Version du guide, empreintes des archives, dossier donneur, ordre des clés, erreur exacte éventuelle.
+      description: Version du guide, empreintes des archives, dossier donneur, historique de tentative, ordre des clés, erreur exacte éventuelle.
     validations:
       required: true
   - type: textarea

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Identifier son autoradio Toyota avant un rétrofit Android Auto : guide illustré, comparaison des références et fiche pour un accompagnement IA.">
+  <title>Mon autoradio est-il concerné ? · Prius IV</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="preflight.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#fiche">Aller à ma fiche</a>
+  <header class="top"><a class="brand" href="https://github.com/toyrek/prius4-android-auto-retrofit"><span class="mark" aria-hidden="true">P4</span> LE GUIDE COMMUNAUTAIRE</a><a href="../downloads/Tutoriel-Prius-IV-Android-Auto.pdf">Le guide PDF ↗</a></header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">PRIUS IV · ANDROID AUTO</p><h1>Le bon départ,<br>c’est le bon autoradio.</h1><p class="lead">Un cas réussi, expliqué simplement. Identifiez votre poste, comparez vos références, puis préparez la suite avec le guide ou une IA.</p><a class="button" href="#fiche">Identifier mon autoradio <span aria-hidden="true">↓</span></a><p class="small">Étape de lecture : gardez les clés de mise à jour hors de la voiture.</p></div>
+      <aside class="case"><span class="pill">LE CAS DOCUMENTÉ</span><div class="radio" aria-hidden="true"><span>TOYOTA</span><strong>Android Auto</strong><div><i>↗</i><i>♫</i><i>☎</i></div></div><h2>Prius IV européenne · 2019</h2><p>Panasonic · JBL · navigation · DAB · CD</p><dl><div><dt>DCU</dt><dd>86140-47490</dd></div><div><dt>MEU</dt><dd>86840-06041</dd></div></dl><p class="small">Android Auto filaire confirmé par le propriétaire. Illustration du résultat, pas une photo de l’écran.</p></aside>
+    </section>
+    <div class="notice"><strong>Ce rétrofit ne convient pas à tous les autoradios.</strong> Le modèle de voiture seul ne suffit pas. Le parcours Prius décrit ici est une adaptation communautaire du rétrofit Toyota Corolla/RAV4.</div>
+    <nav class="steps" aria-label="Les trois étapes"><a href="#identifier"><b>01</b><span><strong>Repérer</strong>Lire les références</span></a><a href="#fiche"><b>02</b><span><strong>Comparer</strong>Remplir ma fiche</span></a><a href="#suite"><b>03</b><span><strong>Se faire guider</strong>Choisir la prochaine action</span></a></nav>
+    <section id="identifier" class="section">
+      <p class="eyebrow">01 / REPÉRER</p><h2>Les informations sont dans les réglages.</h2><p>À l’arrêt, sans clé de mise à jour branchée : <strong>Menu → Configuration → Général → Mise à jour du logiciel</strong>. Relevez les valeurs affichées. Si une information n’est pas accessible, laissez « Je ne sais pas ».</p>
+      <details class="help"><summary>Voir un exemple illustré des valeurs à relever</summary><img src="../assets/identifier.svg" width="1200" height="620" alt="Exemple fictif de l’écran logiciel : Model ID DCU, Model ID MEU, Audio, Navigation et navdb_version. Ne recopiez pas ces valeurs dans votre fiche."><p>Les références des pièces et le fabricant peuvent provenir d’un diagnostic ou d’une étiquette déjà photographiée. Ne démontez pas le poste pour remplir ce formulaire.</p></details>
+    </section>
+    <section id="fiche" class="section">
+      <p class="eyebrow">02 / COMPARER</p><h2>Votre fiche, avec vos valeurs.</h2><p>Une case inconnue reste inconnue. Cette comparaison aide à choisir une recherche ; elle ne certifie pas la compatibilité et ne déclenche aucune installation. La fiche reste dans votre navigateur, sans envoi ni enregistrement automatique.</p>
+      <noscript><p class="notice">Activez JavaScript pour comparer les champs, ou utilisez la <a href="https://github.com/toyrek/prius4-android-auto-retrofit/blob/main/ai/fiche-vehicule.md">fiche texte</a> avec le guide PDF.</p></noscript>
+      <form id="vehicle-form" autocomplete="off">
+        <fieldset><legend><span>1</span> Où en êtes-vous ?</legend><div class="grid three">
+          <label>Une mise à jour est-elle en train de s’écrire ?<select name="update_in_progress"><option value="">Je ne sais pas</option><option value="false">Non</option><option value="true">Oui, elle est en cours</option></select></label>
+          <label>Android Auto fonctionne-t-il déjà ?<select name="android_auto_works"><option value="">Je ne sais pas</option><option value="false">Non</option><option value="true">Oui</option></select></label>
+          <label>Avez-vous déjà commencé ce rétrofit ?<select name="conversion_started"><option value="">Je ne sais pas</option><option value="false">Non</option><option value="true">Oui</option></select></label>
+        </div><p class="inline-warning" id="writing-warning" hidden><strong>Écriture en cours :</strong> gardez READY et la clé branchée. Relevez le message exact ; ne changez pas de clé pour remplir cette fiche.</p></fieldset>
+        <fieldset><legend><span>2</span> Votre voiture et son poste</legend><div class="grid three">
+          <label>Modèle<select name="vehicle"><option value="">Je ne sais pas</option><option value="prius4">Prius IV non rechargeable</option><option value="prime">Prius rechargeable / Prime</option><option value="corolla">Corolla</option><option value="rav4">RAV4</option><option value="other">Autre</option></select></label>
+          <label>Année modèle<input name="year" type="number" min="1900" max="2100" placeholder="Ex. 2019"><small>Elle peut différer de la première immatriculation.</small></label>
+          <label>Marché d’origine<select name="market"><option value="">Je ne sais pas</option><option value="europe">Europe</option><option value="usa">États-Unis</option><option value="japan">Japon</option><option value="other">Autre</option></select><small>Pays de commercialisation initiale, pas votre adresse.</small></label>
+          <label>Le poste est-il celui d’origine ?<select name="original_unit"><option value="">Je ne sais pas</option><option value="true">Oui</option><option value="false">Non / remplacé</option></select></label>
+          <label>Fabricant du poste<select name="manufacturer"><option value="">Je ne sais pas</option><option value="panasonic">Panasonic</option><option value="denso">Denso / Denso Ten / Fujitsu Ten</option><option value="aftermarket">Poste adaptable</option><option value="other">Autre</option></select></label>
+          <label>Écran<select name="screen"><option value="">Je ne sais pas</option><option value="horizontal">Horizontal</option><option value="vertical11">Grand écran vertical 11,6 pouces</option><option value="other">Autre</option></select></label>
+        </div><div class="grid four options">
+          <label>Son JBL<select name="jbl"><option value="">Je ne sais pas</option><option value="true">Oui</option><option value="false">Non</option></select></label>
+          <label>Navigation Toyota intégrée<select name="navigation"><option value="">Je ne sais pas</option><option value="true">Oui</option><option value="false">Non</option></select><small>Pas Google Maps sur le téléphone.</small></label>
+          <label>Radio DAB<select name="dab"><option value="">Je ne sais pas</option><option value="true">Oui</option><option value="false">Non</option></select></label>
+          <label>Lecteur CD<select name="cd"><option value="">Je ne sais pas</option><option value="true">Oui</option><option value="false">Non</option></select></label>
+        </div></fieldset>
+        <fieldset><legend><span>3</span> Les références et versions</legend><p class="small">Les exemples grisés ne sont pas des réponses. Aucun VIN, numéro de série personnel ou identifiant de compte n’est nécessaire.</p><div class="grid three">
+          <label>Modèle du poste<input name="head_unit_model" placeholder="Ex. CV-CS38E2AJ" maxlength="60" spellcheck="false"></label>
+          <label>Référence pièce DCU<input name="dcu_part" placeholder="Ex. 86140-47490" maxlength="40" spellcheck="false"></label>
+          <label>Référence pièce MEU<input name="meu_part" placeholder="Ex. 86840-06041" maxlength="40" spellcheck="false"></label>
+          <label>Model ID DCU<input name="dcu_id" placeholder="Ex. 17TDT2EU-DA01" maxlength="60" spellcheck="false"></label>
+          <label>Model ID MEU<input name="meu_id" placeholder="Ex. 17TMT2EU-FA00" maxlength="60" spellcheck="false"></label>
+          <label>Audio<input name="audio" type="number" min="1" placeholder="Ex. 1000"></label>
+          <label>Navigation (logiciel)<input name="navigation_version" type="number" min="1" placeholder="Ex. 1512"></label>
+          <label>navdb_version (cartes)<input name="navdb" placeholder="Ex. 943" maxlength="40" spellcheck="false"></label>
+        </div></fieldset>
+        <div class="actions"><button type="submit">Comparer ma fiche</button><button class="secondary" type="reset">Effacer ma saisie</button></div>
+      </form>
+      <section id="result" class="result" tabindex="-1" aria-live="polite" hidden><p class="eyebrow">VOTRE PROCHAINE ÉTAPE</p><h3 id="result-title"></h3><p id="result-summary"></p><div class="next"><strong>À faire maintenant</strong><p id="result-next"></p></div><ul id="result-notes"></ul><p class="small">Le résultat compare des déclarations à un seul cas suivi. Il ne vérifie pas physiquement l’autoradio ou le contenu des clés.</p></section>
+    </section>
+    <section id="suite" class="section">
+      <p class="eyebrow">03 / SE FAIRE GUIDER</p><h2>Une seule étape à la fois.</h2><div class="two-cards">
+        <article class="resource"><span class="resource-icon" aria-hidden="true">↗</span><h3>Avec une IA</h3><p>Préparez un message contenant vos valeurs et les consignes du projet. Relisez-le, puis copiez-le dans la conversation avec l’assistant de votre choix.</p><button id="prepare-prompt" type="button">Préparer mon message</button><p class="small">Une IA peut se tromper. Elle doit lire les sources, conserver les inconnues et attendre vos observations avant la suite.</p></article>
+        <article class="resource"><span class="resource-icon" aria-hidden="true">≡</span><h3>Avec le tutoriel</h3><p>Les prérequis, les liens des fichiers, les clés illustrées et les messages de fin sont réunis dans le guide.</p><a class="button secondary" href="../downloads/Tutoriel-Prius-IV-Android-Auto.pdf">Ouvrir le PDF</a><p><a href="https://github.com/toyrek/prius4-android-auto-retrofit/blob/main/docs/01-compatibilite.md">Voir les recherches de compatibilité →</a></p></article>
+      </div>
+      <div id="prompt-panel" class="prompt-panel" hidden><label for="agent-prompt">Message à relire et à transmettre à votre assistant</label><textarea id="agent-prompt" rows="15" readonly spellcheck="false"></textarea><div class="actions"><button id="copy-prompt" type="button">Copier le message</button><button id="download-profile" class="secondary" type="button">Télécharger ma fiche JSON</button></div><p id="copy-status" role="status"></p><p class="small">Vous choisissez si vous partagez ce texte avec un service tiers. Aucun assistant n’est connecté à cette page.</p></div>
+    </section>
+    <section class="endnote"><h2>Vous avez une autre configuration ?</h2><p>Un retour précis aide davantage qu’un « ça marche ». Partagez les références, les versions, les fonctions vérifiées et les problèmes rencontrés, sans données personnelles.</p><a href="https://github.com/toyrek/prius4-android-auto-retrofit/issues/new/choose">Contribuer au projet →</a></section>
+  </main>
+  <footer>Projet indépendant de Toyota · v1.1.0 · 31 octobre 2026<br><a href="https://github.com/toyrek/prius4-android-auto-retrofit">Sources et code</a> · <a href="https://github.com/toyrek/prius4-android-auto-retrofit/blob/main/LICENSE">Licence</a> · Fonctionne aussi hors ligne après téléchargement du dépôt.</footer>
+</body>
+</html>

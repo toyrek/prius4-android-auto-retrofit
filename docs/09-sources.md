@@ -12,6 +12,17 @@
 
 Ces PDF Toyota et firmwares ne sont pas inclus dans le dépôt. Le tutoriel PDF téléchargeable est notre propre synthèse, pas une copie du bulletin constructeur.
 
+## Recherches de compatibilité constructeur
+
+Les recherches du 31 octobre 2026 sont synthétisées dans [la matrice de compatibilité](01-compatibilite.md). Ces pages donnent des périmètres par marché et finition ; elles ne valident pas notre adaptation Prius.
+
+- [Toyota France, FAQ multimédia](https://www.toyota.fr/informations/faq/multimedia-ma-toyota), question sur l'ajout chez un concessionnaire : offre historique de juin 2020, modèles et finition RAV4 précisés.
+- [Toyota UK, offre CarPlay/Android Auto](https://mag.toyota.co.uk/toyota-apple-carplay-and-android-auto-upgrade/), publication du 7 juillet 2021, mise à jour du 29 décembre 2023 : Corolla MY19 et RAV4 MY19/MY20 hors Icon, vérification individuelle demandée.
+- [Toyota USA, Prius 2021](https://pressroom.toyota.com/the-car-that-changed-an-industry-toyota-marks-20th-anniversary-of-prius-with-special-anniversary-edition/) : annonce d'Android Auto hors Limited.
+- [Toyota USA, Prius Prime 2021](https://pressroom.toyota.com/the-2021-toyota-prius-prime-adds-safety-and-tech-while-continuing-to-combine-the-best-of-both-worlds/) : ajout annoncé sur LE.
+
+Les deux pages USA étaient accessibles dans les résultats indexés de la source officielle mais renvoyaient 403 à l'ouverture directe. Leurs affirmations sont limitées aux distinctions explicitement visibles dans les extraits. Aucune référence mondiale exhaustive n'en est déduite.
+
 ## Contributions communautaires
 
 - **Rinsley, HybridLife** : [retour sur le matériel identique et profil 42581](https://hybridlife.org/threads/tutoriel-de-mise-%C3%A0-jour-de-toyota-touch-go-2.3945/page-73#post-199403). Ce témoignage a guidé l'adaptation de la clé 3 ; le projet ne revendique pas son invention.

@@ -1,6 +1,12 @@
 # Prius IV : Android Auto filaire avec le poste Toyota d'origine
 
-**Un retour réel, un tutoriel en français, les liens Toyota et des outils de vérification.**
+**Un retour réel, un guide illustré en français, les liens Toyota et un accompagnement utilisable avec une IA.**
+
+### [Ouvrir le guide interactif →](https://toyrek.github.io/prius4-android-auto-retrofit/)
+
+Identifier son poste, comparer ses références et préparer un message pour son assistant. Sans compte, sans envoi des champs, utilisable aussi hors ligne en ouvrant `guide/index.html` après téléchargement du dépôt.
+
+![Trois étapes : identifier son poste, comparer les preuves, préparer les clés et suivre les messages](assets/parcours.svg)
 
 Le 30 octobre 2026, une Prius IV européenne équipée du Panasonic **86140-47490**, du MEU **86840-06041** et du **JBL** a obtenu Android Auto filaire après adaptation du rétrofit Toyota MM17 vers MM19. Le propriétaire confirme son affichage et son fonctionnement sur l'écran Toyota. Aucun boîtier supplémentaire ni achat de cartes n'a été utilisé.
 
@@ -8,11 +14,12 @@ Le 30 octobre 2026, une Prius IV européenne équipée du Panasonic **86140-4749
 
 ## Commencer ici
 
-1. [Vérifier la compatibilité et comprendre les limites](docs/01-compatibilite.md).
-2. [Télécharger les fichiers depuis Toyota](docs/02-telechargements.md).
-3. [Préparer et contrôler les clés](docs/03-preparer-les-cles.md).
-4. [Suivre le tutoriel de l'installation](docs/04-installation.md).
-5. [Vérifier le résultat et lancer Android Auto](docs/05-apres-installation.md).
+1. **Je découvre :** [le départ en images](docs/00-demarrer.md), puis [les familles de postes et prérequis](docs/01-compatibilite.md).
+2. **Je veux de l'aide :** [ma fiche vierge](ai/fiche-vehicule.md) et [le message pour une IA](ai/PROMPT.md). [Mode d'emploi](docs/10-guide-agent-ia.md).
+3. **Ma configuration a été examinée :** [téléchargements Toyota](docs/02-telechargements.md), puis [préparation et contrôle des clés](docs/03-preparer-les-cles.md).
+4. **Je suis prêt pour le cas décrit :** [installation étape par étape](docs/04-installation.md), puis [contrôles après installation](docs/05-apres-installation.md).
+
+Le formulaire ne donne pas de « feu vert » d'installation. Il repère les informations manquantes, les différences et les conversions déjà commencées. Les variantes USA/Japon, Denso, sans JBL/navigation, avec grand écran ou poste remplacé demandent leur propre étude.
 
 **À emporter :** [tutoriel PDF](downloads/Tutoriel-Prius-IV-Android-Auto.pdf) · [version téléchargeable complète](https://github.com/toyrek/prius4-android-auto-retrofit/releases/latest) · [signaler un retour](https://github.com/toyrek/prius4-android-auto-retrofit/issues/new/choose).
 
@@ -33,6 +40,8 @@ Panasonic **CV-CS38E2AJ**, JBL, DAB, navigation, lecteur CD. Les références id
 
 **Audio 1046 préalable → clé 1 → clé 2 → clé 1 → clé 3 → clé 2.**
 
+![Parcours du seul cas documenté : préalable Audio puis clés 1, 2, 1, 3, 2 ; les messages de fin commandent les changements](assets/cles.svg)
+
 | Support | Rôle dans ce parcours |
 |---|---|
 | Audio préalable, séparé | Mettre Audio 1000 à niveau vers 1046 avant le rétrofit |
@@ -48,6 +57,8 @@ Les clés 1 et 3 peuvent agir automatiquement dès leur insertion. Ce tableau ne
 - Liens officiels des quatre archives utilisées et mots de passe des ZIP du bulletin public.
 - Empreintes des archives, inventaires des **13 / 21 / 517 fichiers** des clés préparées, contrôle du profil donneur.
 - Vérificateur Python **en lecture seule**, sans formatage ni installation.
+- Guide web mobile/bureau, schémas originaux et PDF illustré.
+- Comparateur local de références, fiche utilisateur, [instructions pour agents](AGENTS.md) et [étapes structurées](ai/procedure.json).
 - [Bilan des recherches](docs/06-recherches-et-diagnostic.md), [SmartDeviceLink](docs/07-smartdevicelink.md), [FAQ](docs/08-depannage.md), [sources et crédits](docs/09-sources.md).
 - Modèle de retour pour étendre progressivement la [matrice de compatibilité](docs/01-compatibilite.md).
 
@@ -61,4 +72,4 @@ Community documentation of **one owner-reported successful wired Android Auto re
 
 Voir [CONTRIBUTING.md](CONTRIBUTING.md). Les échecs et résultats partiels sont aussi utiles que les réussites. Documents originaux : **CC BY 4.0** ; outils originaux : **MIT**, voir [LICENSE](LICENSE). Les marques et documents tiers conservent leurs droits respectifs. Projet indépendant de Toyota.
 
-Version documentaire **v1.0.0 - 31 octobre 2026**.
+Version documentaire **v1.1.0 - 31 octobre 2026**.
