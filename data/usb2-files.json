@@ -1,0 +1,110 @@
+{
+  "scope": "Prepared USB as verified 2026-10-30; file integrity is not vehicle compatibility.",
+  "files": [
+    {
+      "path": "17LDL2EU-DB00_0016.kwi",
+      "bytes": 468602641,
+      "sha256": "afd6dd1f72fdc84cfadf19c451fd8bc618ecc681ff8bb8d3cebd9b9ae1873df4"
+    },
+    {
+      "path": "17LDL2EU-DB01_0040.kwi",
+      "bytes": 469651217,
+      "sha256": "5cb063e117336e68536e377589ef741197aa57a511a67f474dd562eb045a6a0a"
+    },
+    {
+      "path": "17LDL2EU-DB02_0027.kwi",
+      "bytes": 472797457,
+      "sha256": "d8becb5210549788dfd66c85f545a22c1db35f90224cbc4a8e921f26be6ca997"
+    },
+    {
+      "path": "17LDL2EU-DB30_0016.kwi",
+      "bytes": 495862207,
+      "sha256": "c9f6d632009e64208bac5bdd767ed0962bb2a456390e59bc70e7ea9c8c3f736f"
+    },
+    {
+      "path": "17LDLMEU-DB00_0027.kwi",
+      "bytes": 473846033,
+      "sha256": "f607f9147899d44598f9036fd486656d814e8eb368c5c75755eb97bc1d08c44f"
+    },
+    {
+      "path": "17LDLMEU-DB30_0016.kwi",
+      "bytes": 496910783,
+      "sha256": "f4747f89764318165d4af9911697b9287148493227c2ea5224663ace5403601f"
+    },
+    {
+      "path": "17LML2EU-FB00_1900.kwi",
+      "bytes": 1575656990,
+      "sha256": "4f7b1b7875122253416f908b575112d59cf45bbf3acbba2e193a30c6437b7610"
+    },
+    {
+      "path": "17LMLMEU-FB00_1900.kwi",
+      "bytes": 1575657726,
+      "sha256": "47ca874539d12a049df0f756f2328616ba279b906c5f0f45a841121d7ac5d3f3"
+    },
+    {
+      "path": "17TDT1EU-DA01_0004.kwi",
+      "bytes": 365840657,
+      "sha256": "5cfeb656b341ea02a6772f47e198be2c0f015f4b17cd63bcead8cc1baa94ff9e"
+    },
+    {
+      "path": "17TDT1EU-DA02_0004.kwi",
+      "bytes": 365840657,
+      "sha256": "2e404452802789ec9967b55c79614795f06450db84956bf5adc5321ade39dfa8"
+    },
+    {
+      "path": "17TDT1EU-DA30_0016.kwi",
+      "bytes": 389954495,
+      "sha256": "fab89bade6f066d451b68b6fcf289f66a98b1d2a62ddcee397f872c2a401f4c7"
+    },
+    {
+      "path": "17TDT1EU-DA31_0016.kwi",
+      "bytes": 389954495,
+      "sha256": "75a85eb9848b6bb28d5614410fe5ea29d84bb875b335947aeeb5879eb9c8ab9e"
+    },
+    {
+      "path": "17TDT2EU-DA00_0031.kwi",
+      "bytes": 360597777,
+      "sha256": "24f296ae7026238b7235beca244d0ae4a6cdb0e362e6c5e75d9f5f670bd57e7d"
+    },
+    {
+      "path": "17TDT2EU-DA01_0004.kwi",
+      "bytes": 365840657,
+      "sha256": "5bdd770e301405a9d71a56f9a90fa135934ac4c4b5632ef9b427579a8345e289"
+    },
+    {
+      "path": "17TDT2EU-DA02_0004.kwi",
+      "bytes": 365840657,
+      "sha256": "3ca2f06b61898f0b00934fa95bc250ce2fe62c6c3fc5001c0fa675e07a953662"
+    },
+    {
+      "path": "17TDT2EU-DA30_0016.kwi",
+      "bytes": 389954495,
+      "sha256": "d48aff5586c0d67ca332f23e32575a322589d905a270ba9e47f553a389b7f646"
+    },
+    {
+      "path": "17TDT2EU-DA31_0016.kwi",
+      "bytes": 389954495,
+      "sha256": "582ae77441f77614d1cb37ba7fb2525f363c9fd59073656e70c99685a0cca6ab"
+    },
+    {
+      "path": "17TDTEEU-DA30_0016.kwi",
+      "bytes": 392051647,
+      "sha256": "394820c1af213110b84d6195aab672517a4b7418659316124639580d98abc5c4"
+    },
+    {
+      "path": "17TMT2EU-FA00_1900.kwi",
+      "bytes": 1575655166,
+      "sha256": "0200b70779d78e94483be0a6099a51dac836c872487af429cbda46c403c34c92"
+    },
+    {
+      "path": "README.docx",
+      "bytes": 27644,
+      "sha256": "7336f9214e8836066ce63b90a2ae41470bfae774efb27f3c3d20028cb695c008"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 30500,
+      "sha256": "23ff49a5a76a07449a23ece4851edcf5423dafab0ccccb679823a782d9a01ec4"
+    }
+  ]
+}

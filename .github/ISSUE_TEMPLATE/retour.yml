@@ -1,0 +1,42 @@
+name: Retour d'installation
+description: Partager un succès, un échec ou un résultat partiel avec les références exactes.
+title: "[Retour] Prius IV - DCU / MEU"
+body:
+  - type: markdown
+    attributes:
+      value: "Ne joignez ni VIN, ni numéro de série, ni journal brut. Masquez les identifiants et métadonnées des photos."
+  - type: input
+    id: vehicle
+    attributes:
+      label: Véhicule, année et marché
+      placeholder: "Prius IV, année, Europe/import..."
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Références et équipement
+      description: DCU, MEU, Panasonic/Denso, JBL, navigation, DAB, CD. Aucun identifiant unique.
+    validations:
+      required: true
+  - type: textarea
+    id: before_after
+    attributes:
+      label: Versions avant et après
+      description: Model ID DCU/MEU, Audio, Navigation, navdb_version. Indiquer inconnu si non relevé.
+    validations:
+      required: true
+  - type: textarea
+    id: process
+    attributes:
+      label: Paquets, profil, étapes et messages
+      description: Version du guide, empreintes des archives, dossier donneur, ordre des clés, erreur exacte éventuelle.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Résultat et fonctions réellement testées
+      description: Android Auto, téléphone/Android, audio JBL, caméra, commandes, radio, navigation, CarPlay, SDL. Distinguer non testé et échec.
+    validations:
+      required: true

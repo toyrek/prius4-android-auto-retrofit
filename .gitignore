@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+*.zip
+*.kwi
+*.dat
+*.enc2
+*.log
+17DISP_DREC/
+raw/
+private/
+*.part
+Thumbs.db
+.DS_Store

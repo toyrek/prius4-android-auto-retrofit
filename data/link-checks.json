@@ -1,0 +1,57 @@
+{
+  "scope": "HTTP headers and first 16 bytes only; complete integrity test was done on 2026-10-30.",
+  "results": [
+    {
+      "id": "usb1",
+      "url": "https://streamtechdoc.toyota-europe.com/techdoc3/retrofit/Full_upgrade_package_Toyota_USB1.zip",
+      "checked_utc": "2026-10-31T06:54:03.692294+00:00",
+      "status": 206,
+      "final_url": "https://streamtechdoc.toyota-europe.com/techdoc3/retrofit/Full_upgrade_package_Toyota_USB1.zip",
+      "content_range": "bytes 0-15/225642",
+      "content_length": "16",
+      "etag": "\"cba86d6aac8d4a11c10b1f938b73bf3c\"",
+      "last_modified": "Mon, 28 Oct 2024 13:16:26 GMT",
+      "zip_header": true,
+      "matches_recorded_size": true
+    },
+    {
+      "id": "usb2",
+      "url": "https://streamtechdoc.toyota-europe.com/techdoc3/retrofit/Full_upgrade_package_Toyota_USB2.zip",
+      "checked_utc": "2026-10-31T06:54:03.694295+00:00",
+      "status": 206,
+      "final_url": "https://streamtechdoc.toyota-europe.com/techdoc3/retrofit/Full_upgrade_package_Toyota_USB2.zip",
+      "content_range": "bytes 0-15/9833317852",
+      "content_length": "16",
+      "etag": "\"5ee847d3ad44b4733be18d006e4f9645-1173\"",
+      "last_modified": "Mon, 28 Oct 2024 13:16:26 GMT",
+      "zip_header": true,
+      "matches_recorded_size": true
+    },
+    {
+      "id": "usb3",
+      "url": "https://streamtechdoc.toyota-europe.com/techdoc3/retrofit/Full_upgrade_package_Toyota_USB3_EU.zip",
+      "checked_utc": "2026-10-31T06:54:03.694295+00:00",
+      "status": 206,
+      "final_url": "https://streamtechdoc.toyota-europe.com/techdoc3/retrofit/Full_upgrade_package_Toyota_USB3_EU.zip",
+      "content_range": "bytes 0-15/13659575090",
+      "content_length": "16",
+      "etag": "\"ab0c92b7817c463dd3130acaf845ab65-1629\"",
+      "last_modified": "Mon, 28 Oct 2024 13:17:39 GMT",
+      "zip_header": true,
+      "matches_recorded_size": true
+    },
+    {
+      "id": "audio1046",
+      "url": "https://streamtechdoc.toyota-europe.com/techdoc3/audio_navigation/17TDT2EU-DA01_Latest.zip",
+      "checked_utc": "2026-10-31T06:54:03.695292+00:00",
+      "status": 206,
+      "final_url": "https://streamtechdoc.toyota-europe.com/techdoc3/audio_navigation/17TDT2EU-DA01_Latest.zip",
+      "content_range": "bytes 0-15/275863523",
+      "content_length": "16",
+      "etag": "\"226d8c0f72f37068fdc05e1a254be082-33\"",
+      "last_modified": "Mon, 28 Oct 2024 12:58:56 GMT",
+      "zip_header": true,
+      "matches_recorded_size": true
+    }
+  ]
+}

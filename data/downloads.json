@@ -1,0 +1,40 @@
+{
+  "recorded_date": "2026-10-30",
+  "hashes": "Local observations, not Toyota-published signatures. Mutable URLs require a new compatibility review if contents change.",
+  "archives": [
+    {
+      "id": "usb1",
+      "filename": "Full_upgrade_package_Toyota_USB1.zip",
+      "url": "https://streamtechdoc.toyota-europe.com/techdoc3/retrofit/Full_upgrade_package_Toyota_USB1.zip",
+      "bytes": 225642,
+      "sha256": "23b93681664c8191168ee380ae8889d6a8e0f6b7a618f7f7c3b9f184ca5e96e2",
+      "uncompressed_bytes": 607804
+    },
+    {
+      "id": "usb2",
+      "filename": "Full_upgrade_package_Toyota_USB2.zip",
+      "url": "https://streamtechdoc.toyota-europe.com/techdoc3/retrofit/Full_upgrade_package_Toyota_USB2.zip",
+      "bytes": 9833317852,
+      "sha256": "4d2278bbb065cd2e5b9d15f37958e55330ec0c4fe67d2ec75b39d0132ef16019",
+      "uncompressed_bytes": 11380586540
+    },
+    {
+      "id": "usb3",
+      "filename": "Full_upgrade_package_Toyota_USB3_EU.zip",
+      "url": "https://streamtechdoc.toyota-europe.com/techdoc3/retrofit/Full_upgrade_package_Toyota_USB3_EU.zip",
+      "bytes": 13659575090,
+      "sha256": "9008ac6536c1ea4d3be8a16f4d3d05815eab5c4b3848df9ea8a55c59df764654",
+      "uncompressed_bytes": 23477768780
+    },
+    {
+      "id": "audio1046",
+      "filename": "17TDT2EU-DA01_Latest.zip",
+      "url": "https://streamtechdoc.toyota-europe.com/techdoc3/audio_navigation/17TDT2EU-DA01_Latest.zip",
+      "bytes": 275863523,
+      "sha256": "8b7712a9f909b39765b2388777daeb6606d98899f8ee1b996cd1fd7f31ebafa8",
+      "extracted_filename": "17TDT2EU-DA01_0020.kwi",
+      "extracted_bytes": 366885311,
+      "extracted_sha256": "7517bd36cda209a177448d1b34352097c9d31460fc3a93d2fabebb85e4ae4f9c"
+    }
+  ]
+}

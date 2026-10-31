@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-30",
+  "evidence": "Owner reported the versions and successful Android Auto launch in a guided session; not independently observed by the assistant.",
+  "vehicle": "Toyota Prius IV European MY2019",
+  "head_unit": "Panasonic CV-CS38E2AJ",
+  "dcu_part": "86140-47490",
+  "meu_part": "86840-06041",
+  "equipment": [
+    "JBL",
+    "DAB",
+    "navigation",
+    "CD"
+  ],
+  "before": {
+    "dcu": "17TDT2EU-DA01",
+    "meu": "17TMT2EU-FA00",
+    "audio": 1000,
+    "navigation": 1512,
+    "navdb": "943"
+  },
+  "preliminary_audio": 1046,
+  "usb_sequence": [
+    1,
+    2,
+    1,
+    3,
+    2
+  ],
+  "after": {
+    "dcu": "17TDT2EU-DA31",
+    "meu": "17TMT2EU-FA10",
+    "audio": 1075,
+    "navigation": 1120,
+    "navdb": null,
+    "android_auto_wired": "owner_confirmed"
+  },
+  "separate_map_update_performed": false,
+  "unverified": [
+    "CarPlay",
+    "JBL full-channel test",
+    "camera",
+    "steering wheel controls",
+    "all navigation functions",
+    "SDL connection",
+    "HUD integration",
+    "wireless Android Auto"
+  ]
+}

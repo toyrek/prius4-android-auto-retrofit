@@ -1,0 +1,70 @@
+{
+  "scope": "Prepared USB as verified 2026-10-30; file integrity is not vehicle compatibility.",
+  "files": [
+    {
+      "path": "intervention/MEU_detail_history_00.dat_cy17p",
+      "bytes": 24260,
+      "sha256": "8740a0435b99a7fdf8f6d768aa8682a6b558589da40831c46350c6ca6b69925d"
+    },
+    {
+      "path": "intervention/MEU_update_history_00.dat_cy17p",
+      "bytes": 670,
+      "sha256": "4db5d4a460d99d949070974bb21a0170832f24e769b1e60c7ccc90207f302bdb"
+    },
+    {
+      "path": "intervention/boot.cmd.img",
+      "bytes": 1995,
+      "sha256": "d34c650451ccfc1bbc688e9182d7c157124135b99702303178abb31bd1897b16"
+    },
+    {
+      "path": "intervention/dma_config.txt",
+      "bytes": 158,
+      "sha256": "8c9e26df593cf80094f715a82757eb6bab04b8c88fe4f717b3988db33735d690"
+    },
+    {
+      "path": "intervention/first_cycle_layout.xml",
+      "bytes": 1378,
+      "sha256": "eb638c17baf97595db95cfe847267adeda61ba49d4ff44e96515a5905e51d181"
+    },
+    {
+      "path": "intervention/font_760x16.tga",
+      "bytes": 48684,
+      "sha256": "09f70d470ca903edd53496a1fbd54798319a22265183a77ce54bd5573c4a7e1c"
+    },
+    {
+      "path": "intervention/hw_components.csv",
+      "bytes": 100,
+      "sha256": "8ad5db7e608bbbaa0d544d8978ea5880d88db4161a38e8144e5e6d544cbbf64e"
+    },
+    {
+      "path": "intervention/intervention_script.sh",
+      "bytes": 25004,
+      "sha256": "c7ef9a6068a37a10012809461cf5a7c32a06252040b2c82e430c7358b2b3f7e6"
+    },
+    {
+      "path": "intervention/replication_layout.xml",
+      "bytes": 864,
+      "sha256": "393e86f9c5fe10557fa9bc28bdc724abe141d9a8d3f816d7e8937b0773a83072"
+    },
+    {
+      "path": "intervention/screen.tga",
+      "bytes": 149984,
+      "sha256": "813a76cbc9fc0368043354d057f75a34ee13837be8fd31edd36b3a30d0c9f26c"
+    },
+    {
+      "path": "intervention/second_cycle_layout.xml",
+      "bytes": 939,
+      "sha256": "3457bb5926b3f780b2871018382d1281f4b6ed57ef78c5a0e388b70eb9ada402"
+    },
+    {
+      "path": "intervention/tree.xml",
+      "bytes": 63072,
+      "sha256": "6ed38c571e6819ea6bfd72d5ce05a1e46ebd93ba51b007537153ce779018aaec"
+    },
+    {
+      "path": "intervention/u-boot.bin",
+      "bytes": 174408,
+      "sha256": "4cd0aff072c240142a3b51eebc30f036418063b221eb8c23d868130899c92ae5"
+    }
+  ]
+}
